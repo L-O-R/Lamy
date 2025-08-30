@@ -1,16 +1,107 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
 
-
-
+@font-face {
+    font-family: "Inter", sans-serif;
+    src: url("../assets/Inter-VariableFont_opsz\,wght.ttf");
+}
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Inter"
 }
 
-@font-face {
-    font-family: "Inter", sans-serif;
-    src: url("../assets/Inter-VariableFont_opsz\,wght.ttf");
+
+
+
+
+:root {
+    --font-family: "Inter", sans-serif;
+}
+
+/* root css styles ------------------------------------------------------ */
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-family);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    /* view port height  */
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+main {
+    flex-grow: 1;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* -------------------------------------------------------------------- */
+
+.main_header {
+    padding: 1em 0em;
+}
+
+.main_header_container {
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_header_burger_menu,
+.main_header_navigation {
+    flex: 1;
+}
+
+
+.main_header_burger_menu div {
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.main_header_burger_menu div span {
+    display: inline-block;
+    width: 60%;
+    height: 2.5px;
+    background-color: black;
+}
+
+.main_header_heading img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.main_header_navigation ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.4em;
+    font-size: 1.2rem;
+}
+
+
+.main_header_navigation ul svg {
+    /* background-color: white; */
+    /* padding: 0.3em; */
+    /* border-radius: 50%; */
+    width: 30px;
+    height: 30px;
 }
