@@ -72,15 +72,16 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 8px;
+    gap: 5px;
 }
 
 .main_header_burger_menu div span {
     display: inline-block;
-    width: 60%;
+    width: 55%;
     height: 2.5px;
     background-color: black;
 }
+
 
 .main_header_heading img {
     width: 100%;
@@ -104,4 +105,69 @@ a {
     /* border-radius: 50%; */
     width: 30px;
     height: 30px;
+}
+
+
+/* filter section css */
+.filter_section {
+    padding: 2.5em 0;
+    overflow: hidden;
+}
+
+.filter_section div {
+    margin-left: 10%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+
+}
+
+.filter_section div input[type="search"] {
+    padding: 1em 1.4em;
+    font-size: 1rem;
+    border-radius: 30px;
+    min-width: 20vw;
+    outline: none;
+    border: none;
+    flex-shrink: 0;
+}
+
+.filter_section div select {
+    padding: 1em 1.4em;
+    min-width: 12vw;
+    flex-shrink: 0;
+    border-radius: 30px;
+    border: none;
+}
+
+
+/* hero section */
+.hero_section {
+    padding: 2.4em 0;
+    max-width: 80%;
+    margin: auto;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    /* border: 1px solid black; */
+    gap: 1.5em;
+
+}
+
+.hero_section_grid1 {
+    grid-area: span 3 / span 2;
+    background-color: #b70e0e;
+}
+
+.hero_section_grid2 {
+    grid-area: span 3 / span 2;
+    background-color: #000000;
+
+}
+
+.hero_section_grid3 {
+    grid-column: span 4;
+    background-color: #a6a6a6;
+
 }
